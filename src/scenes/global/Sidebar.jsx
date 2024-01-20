@@ -64,7 +64,7 @@ const Sidebar = () => {
         }
       }}
     >
-      <ProSidebar>
+      <ProSidebar collapsed={isCollapsed}>
         <Menu>
           {/* LOGO AND MENU ICON */}
           <MenuItem
@@ -212,19 +212,10 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-
-
-
-
           </Box>
-
         </Menu>
-
       </ProSidebar>
-
-
     </Box>
-
   );
 };
 
